@@ -68,9 +68,14 @@ public class MainActivity extends AppCompatActivity {
             @SuppressWarnings("deprecation")
             protected Dialog onCreateDialog (int id){
                 if (id == DIALOG_ID){
+                    //com spinner
                     DatePickerDialog dp = new DatePickerDialog(this, android.R.style.Theme_Holo_Dialog, dpickerListener, ano, mes, dia);
                     dp.getDatePicker().setCalendarViewShown(false);
                     dp.getDatePicker().setSpinnersShown(true);
+                    //sem spinner
+                        //DatePickerDialog dp = new DatePickerDialog(this, dpickerListener, ano, mes, dia);
+                        //dp.getDatePicker().setCalendarViewShown(false);
+                        //dp.getDatePicker().setSpinnersShown(true);
                     return dp;
                 }
                 else
